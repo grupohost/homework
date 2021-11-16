@@ -1,0 +1,153 @@
+:root{
+    --main-bg: #0b091c;
+    --main-font: #eae8f1;
+    --discret-color: #68637e ;
+    --main-color : #00e6c9;
+    --main-color-hover : #00e6c9;
+    --input-color : #0e0b1a;
+    --light-grey : #fefefe;
+    --main-yellow : #292638;
+    --dark-gray : #596774
+}
+
+body{
+    background-color: var(--main-bg);
+    color:var(--main-font);
+    font-weight: light;
+}
+
+h1,h2{
+    font-weight: lighter;
+}
+
+*{
+    font-size: 1.15rem;
+}
+
+.resalt{
+    color: var(--main-color);
+}
+
+/*Custom CSS for bootstrap*/
+
+.btn, .input-group-text, .card, .alert{
+    border-radius: 10px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .bg-primary, .form-check-input:checked{
+    background-color:var(--main-color) !important;
+    border-color:var(--main-color);
+}
+
+.input-group-text, .form-control, .card, .table{
+    background-color:var(--input-color) !important;
+    border-color: var(--discret-color);
+    color: var(--discret-color);
+    text-align: left;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) > *{
+    color:var(--main-bg);
+    background-color: var(--discret-color);
+}
+
+.text-primary{
+    color: var(--main-color) !important;
+}
+.text-secondary{
+    color: var(--discret-color) !important;
+}
+
+.btn-info, .btn-info:hover{
+    background-color: var(--main-yellow);
+    border-color:var(--main-yellow);
+    color:white;
+}
+
+.btn-light, .btn-light:hover{
+    background-color: var(--discret-color);
+    border-color: var(--discret-color);
+}
+
+.alert{
+    padding: 0.5rem 1rem;
+}
+
+.alert-warning {
+    color: var(--input-color);
+    background-color: var(--discret-color);
+    border-color: var(--discret-color);
+}
+
+/*Custom CSS for calendar*/
+
+.rdrMonthsVertical {
+    align-items: center;
+}
+
+.rdrDateDisplayWrapper{
+    background-color: var(--discret-color) !important;
+}
+
+.rdrMonthAndYearWrapper{
+    background-color: var(--main-bg);
+}
+
+.rdrMonthAndYearPickers select, .rdrDateDisplayItem input{
+    color:var(--discret-color) !important;
+    background-color: var(--main-bg) !important;
+    border: 1px var(--discret-color) solid !important;
+}
+
+.rdrMonths{
+    background-color:var(--main-bg);
+}
+
+.rdrWeekDay{
+    color: var(--main-bg);
+}
+
+.rdrDayDisabled{
+    background-color:transparent !important;
+}
+
+.rdrDayDisabled .rdrDayNumber span{
+    color: var(--discret-color);
+}
+
+.rdrDayNumber span{
+    color: var(--main-font);
+}
+
+.rdrDateDisplayItem{
+    box-shadow: none;
+    border-color: var(--main-bg) !important;
+}
+
+.rdrDateDisplayItemActive {
+    border-color: var(--main-color) !important;
+}
+
+.rdrNextPrevButton, .rdrNextPrevButton{
+    background-color: var(--discret-color);
+}
+
+.rdrPprevButton i {
+    border-color: transparent var(--main-font) transparent transparent;
+}
+
+.rdrNextButton i {
+    border-color: transparent transparent transparent var(--main-font);
+}
+
+.rdrMonthAndYearWrapper {
+    height: auto;
+    padding: 10px 0;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span{
+    color: var(--main-bg) !important;
+}

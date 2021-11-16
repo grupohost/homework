@@ -1,0 +1,2 @@
+2021-11-15 13:18:45 warning: DebugKit is disabling itself as your host `vincint.anitacode.com` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2021-11-15 13:23:06 warning: DebugKit is disabling itself as your host `vincint.anitacode.com` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
